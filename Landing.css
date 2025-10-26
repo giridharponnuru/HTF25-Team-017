@@ -1,0 +1,67 @@
+/* 🌿 Clean Modern Landing Page */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e9fff7, #f4ffff, #e7fcf3);
+  color: #003a2d;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 1.5s ease;
+}
+
+.landing-title {
+  font-size: 3.5rem;
+  color: #00b894;
+  text-shadow: 0 0 20px #00ffcc;
+  margin-bottom: 0.5rem;
+}
+
+.landing-subtitle {
+  font-size: 1.4rem;
+  color: #008060;
+  margin-bottom: 3rem;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 2rem;
+}
+
+.button-group button {
+  background: linear-gradient(90deg, #00e0ff, #00ff99);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  padding: 1.3rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.4);
+  transition: all 0.3s ease;
+}
+
+.button-group button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 40px #00ffee;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

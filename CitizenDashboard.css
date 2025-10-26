@@ -1,0 +1,136 @@
+/* 🌿 Clean Full-Screen White Theme for Citizen Dashboard */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full-page white background */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: #faf8ff; /* soft white-green */
+}
+
+/* Fixed header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #00e0ff, #00ff99);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 149, 255, 0.25);
+  z-index: 1000;
+}
+
+header h1 {
+  color: #004d40;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+header span {
+  color: #002d24;
+  font-weight: 600;
+}
+
+header button {
+  background: #ffffff;
+  border: 2px solid #00b894;
+  color: #00b894;
+  font-weight: 600;
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+header button:hover {
+  background-color: #00ffcc;
+  color: #004d40;
+  box-shadow: 0 0 10px rgba(0, 255, 180, 0.5);
+}
+
+/* Main content layout */
+.dashboard-container {
+  margin-top: 6rem; /* leave space for fixed header */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  background: #f8fff9; /* white background */
+  padding: 2rem;
+}
+
+/* Card styles */
+.request-section,
+.requests-section {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 255, 150, 0.15);
+  padding: 2rem;
+  flex: 1;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+/* Headings */
+h2 {
+  color: #00b894;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #00b894;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #004d40;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 10px #00ffee;
+}
+
+/* Map box */
+.leaflet-container {
+  border-radius: 10px;
+  border: 1.5px solid #00b894;
+  box-shadow: 0 0 8px rgba(0, 255, 150, 0.2);
+  margin-bottom: 1rem;
+}
+
+/* Submit button */
+button.submit {
+  width: 100%;
+  background: linear-gradient(90deg, #00e0ff, #00ff99);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffee;
+}

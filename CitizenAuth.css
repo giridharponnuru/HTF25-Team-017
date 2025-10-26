@@ -1,0 +1,139 @@
+/* 🌿 Clean Bright Blue-Green Auth Page */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f6fff9, #e8faff, #f0fff4);
+  color: #f9f8f8;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200%;
+  width: 100%;
+  animation: fadeIn 1s ease;
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 3.5rem 4rem;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 180, 0.3),
+              0 0 40px rgba(0, 200, 255, 0.2);
+  transition: all 0.3s ease;
+  animation: pop 0.8s ease;
+}
+
+.auth-box:hover {
+  box-shadow: 0 0 40px rgba(218, 222, 8, 0.35),
+              0 0 60px rgba(0, 180, 255, 0.25);
+}
+
+h2 {
+  color: #00b894;
+  text-shadow: 0 0 10px #00ffd0;
+  font-size: 2.2rem;
+  margin-bottom: 0.4rem;
+}
+
+h3 {
+  color: #87b1b1;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  border: 1.5px solid #00b894;
+  outline: none;
+  font-size: 1rem;
+  background: #f8ffff;
+  color: #003030;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #00e0ff, #00ff99);
+  border: none;
+  border-radius: 12px;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #00ffee;
+}
+
+.toggle-text {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #006666;
+}
+
+.toggle-text span {
+  color: #00b894;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.toggle-text span:hover {
+  color: #0099cc;
+}
+
+.forgot-password {
+  margin-top: 1rem;
+  color: #0099cc;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #00b894;
+}
+
+.success {
+  color: #00b894;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.error {
+  color: #ff5555;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
